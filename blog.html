@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+<body>
+	<div class="post">
+		<div class="date">June 7th, 2020</div>
+
+		<h2>Reinforcement Learning: What and Why?</h2>
+		   <p class="quote">
+	 	   	It is a general conception that in order to make a machine learn something we need to provide it with certain predefined correct actions and behaviour and this is exactly what supervised machine learning does. This seems very tedious when you are trying to build a strong AI, that is a system that does not excel only at one task but can be very multitasking like humans.This is where Reinforcement Learning(RL) takes over.
+
+RL is the closest thing towards mimicking human intelligence. In fact RL is inspired by human intelligence and behaviour pattern. Its goal is to mimic human behaviour.
+		   </p>
+		   <a href="https://medium.com/@adarsh97ada/reinforcement-learning-what-and-why-45fbe215e07f"><img src="AI.jpeg" alt="Image not found!"></a>
+
+		   <p>
+		   	This is where Reinforcement Learning(RL) takes over.
+
+RL is the closest thing towards mimicking human intelligence. In fact RL is inspired by human intelligence and behaviour pattern. Its goal is to mimic human behaviour.
+
+If we were to define Reinforcement Learning, it could be something like this:
+
+A way of making a system learn such that instead of instructing it with correct actions, we train it to evaluate the correct action and always pursue towards finding a policy that obtains a potentially maximum reward in a very complex environment.
+
+A very frequent term that appears when we are dealing with RL is “Reward”. A reward can be considered a scalar value that a system is awarded whenever it performs a certain action. It can be positive reward or a zero reward and even a negative reward or penalty.
+		   <br>
+		   In order to understand it clearly we loom at a very simple example.
+
+If there is an outbreak of a viral disease. Scientists around the world are trying to develop vaccine for it. Suppose they have developed 3 vaccines A, B, C and now they want to test it on humans. So they reinforcement learning to choose which vaccine is the best. so they begin the trial on patients randomly selecting any one of the three. If the patient recovers ,there a reward else there is a penalty.
+
+		   </p>
+
+		   <p>After a certain number of trials we try to find out which vaccine performs the best, for this here we have used a method called Sample average method(discussed later). If we choose the vaccine which has performed better till now we are performing a greedy action, i.e. selecting the current max of action-value.Action is the action taken.Value is the expected reward from the actions taken.</p>
+		   <p>Here Target is the new reward [target — old estimate] could be understood as new error. so using the step size we are taking a step the new error. The step size would be a function that produces a number between 0 and 1.
+
+Note — The rewards remain constant throughout the process so we can call this type of problem a stationary problem. This problem would be more difficult if the rewards don’t remain similar for an action always. To visualize suppose the vaccine B performs significantly better in winter than the others so this problem isn’t stationary anymore and is called a non stationary problem.
+
+There is a problem that is very standard in RL called the K-arm bandit problem.
+
+Here the bandit has K different actions of them he has to choose the action that yields maximum reward. So standard RL method like Sample Average Method wouldn’t help us in solving the non-stationary problems We need new approaches for this.
+
+One option would be fix the step size in the incremental update method, but how will this help us?
+
+Fixing the step size increases the influence of recent rewards on the estimate than the older ones, so there always will be a provision to adapt to changes if any.</p>
+
+
+<hr>
+	</div>
+	<div class="post">
+		<div class="date">July 7th, 2020</div>
+
+		<h2>Reinforcement Learning: What and Why? Contd.</h2>
+		   <p class="quote">
+	 	   	It is a general conception that in order to make a machine learn something we need to provide it with certain predefined correct actions and behaviour and this is exactly what supervised machine learning does. This seems very tedious when you are trying to build a strong AI, that is a system that does not excel only at one task but can be very multitasking like humans.This is where Reinforcement Learning(RL) takes over.
+
+RL is the closest thing towards mimicking human intelligence. In fact RL is inspired by human intelligence and behaviour pattern. Its goal is to mimic human behaviour.
+		   </p>
+		   
+		   <p>
+		   	This is where Reinforcement Learning(RL) takes over.
+
+RL is the closest thing towards mimicking human intelligence. In fact RL is inspired by human intelligence and behaviour pattern. Its goal is to mimic human behaviour.
+
+If we were to define Reinforcement Learning, it could be something like this:
+
+A way of making a system learn such that instead of instructing it with correct actions, we train it to evaluate the correct action and always pursue towards finding a policy that obtains a potentially maximum reward in a very complex environment.
+
+A very frequent term that appears when we are dealing with RL is “Reward”. A reward can be considered a scalar value that a system is awarded whenever it performs a certain action. It can be positive reward or a zero reward and even a negative reward or penalty.
+		   <br>
+		   In order to understand it clearly we loom at a very simple example.
+
+If there is an outbreak of a viral disease. Scientists around the world are trying to develop vaccine for it. Suppose they have developed 3 vaccines A, B, C and now they want to test it on humans. So they reinforcement learning to choose which vaccine is the best. so they begin the trial on patients randomly selecting any one of the three. If the patient recovers ,there a reward else there is a penalty.
+
+		   </p>
+
+		   <p>After a certain number of trials we try to find out which vaccine performs the best, for this here we have used a method called Sample average method(discussed later). If we choose the vaccine which has performed better till now we are performing a greedy action, i.e. selecting the current max of action-value.Action is the action taken.Value is the expected reward from the actions taken.</p>
+		   <p>Here Target is the new reward [target — old estimate] could be understood as new error. so using the step size we are taking a step the new error. The step size would be a function that produces a number between 0 and 1.
+
+Note — The rewards remain constant throughout the process so we can call this type of problem a stationary problem. This problem would be more difficult if the rewards don’t remain similar for an action always. To visualize suppose the vaccine B performs significantly better in winter than the others so this problem isn’t stationary anymore and is called a non stationary problem.
+
+There is a problem that is very standard in RL called the K-arm bandit problem.
+
+Here the bandit has K different actions of them he has to choose the action that yields maximum reward. So standard RL method like Sample Average Method wouldn’t help us in solving the non-stationary problems We need new approaches for this.
+
+One option would be fix the step size in the incremental update method, but how will this help us?
+
+Fixing the step size increases the influence of recent rewards on the estimate than the older ones, so there always will be a provision to adapt to changes if any.</p>
+
+
+<hr>
+	</div>
+
+
+</body>
+</html>
